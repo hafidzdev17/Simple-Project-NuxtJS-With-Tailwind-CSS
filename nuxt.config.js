@@ -16,26 +16,6 @@ module.exports = {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  env: {
-    users: [
-      { id: 1, name: "M Hafidz ", number: 24 },
-      { id: 2, name: "Deddy Gunawan", number: 23 },
-      { id: 3, name: "Mas Bro", number: 30 },
-      { id: 4, name: "Hasyim Asyari", number: 23 },
-      { id: 5, name: "Sam", number: 35 },
-      { id: 6, name: "Didik", number: 2 },
-    ],
-  },
-  generate: {
-    routes: [
-      "/1",
-      "/2",
-      "/3",
-      "/4",
-      "/5",
-      "/6",
-    ],
-  },
 
   /*
    ** Customize the progress-bar color
