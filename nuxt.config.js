@@ -1,8 +1,8 @@
 module.exports = {
   mode: "universal",
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: process.env.npm_package_name || "",
     meta: [
@@ -14,41 +14,59 @@ module.exports = {
         content: process.env.npm_package_description || "",
       },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  },
+  env: {
+    users: [
+      { id: 1, name: "M Hafidz ", number: 24 },
+      { id: 2, name: "Deddy Gunawan", number: 23 },
+      { id: 3, name: "Mas Bro", number: 30 },
+      { id: 4, name: "Hasyim Asyari", number: 23 },
+      { id: 5, name: "Sam", number: 35 },
+      { id: 6, name: "Didik", number: 2 },
     ],
   },
+  generate: {
+    routes: [
+      "/1",
+      "/2",
+      "/3",
+      "/4",
+      "/5",
+      "/6",
+    ],
+  },
+
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: "#fff" },
+   ** Customize the progress-bar color
+   */
+  loading: "~/components/loading.vue",
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [],
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss",
   ],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [],
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-    },
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
   },
 };
